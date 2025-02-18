@@ -1,0 +1,211 @@
+.main {
+    height: 100vh;
+    
+    .main-wr {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        .main-contents {
+
+            .policies {
+                width: 100%;
+                padding-top: 35px;
+                min-width: 560px;
+        
+                .policies-swiper {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                    overflow-y: auto;
+    
+                    .policies-item {
+                        flex-grow: 1;
+                        font-size: 14px;
+                        display: flex;
+                        gap: 15px;
+                        font-size: 14px;
+                        color: black;
+                        height: max-content;
+                        padding-bottom: 10px;
+    
+                        .policies-image {
+                            width: 40px;
+                            height: auto;
+    
+                            & > img {
+                                width: 40px;
+                                height: auto;
+                            }
+                        }
+    
+                        .policies-infor {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+    
+                    @media (max-width: 860px) {        
+                        display: flex;  
+                        gap: 10px;
+    
+                        .policies-item {
+                            flex: 0 0 calc(50% - 5px);
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+    
+                            .policies-infor {
+                                align-items: center;
+    
+                            }
+                        }
+                    }
+                }
+                
+            }
+        
+            .collections {
+                width: 100%;
+                padding-top: 30px;
+                min-width: 560px;
+                    
+                .collection-wr {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 40px;
+                    
+                    .collection-item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+        
+                        a {
+                            width: 100%;
+                            height: auto;
+                            
+                            img {
+                                width: 100%;
+                                height: auto;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+    
+                    @media (max-width: 860px) {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 10px;
+                    }
+                }
+            }
+        
+            .products {
+                width: 100%;
+                min-width: 560px;
+                margin-top: 50px;
+        
+                .title {
+                    margin-bottom: 35px;
+                
+                    h1 {
+                        font-size: 22px;
+                        text-align: center;
+                    }
+                }
+    
+                .body {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 60px 40px;
+    
+                    .item {
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        flex-direction: column;
+    
+                        .product-image {
+                            width: 100%;
+    
+                            a {
+                                width: 100%;
+                                height: auto;
+        
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                    object-fit: cover;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+    
+                        .product-text {
+                            margin-top: 25px;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding-bottom: 20px;
+    
+                            .name {
+                                margin-bottom: 10px;
+                                text-align: center;
+                            }
+    
+                            .price {
+                                padding-top: 15px;
+                                margin-bottom: 15px;
+                                border-top: 1px solid #ededed;
+                                text-align: center;
+                                width: 100%;
+                            }
+    
+                            .special-status {
+                                width: max-content;
+                                height: max-content;
+                                width: 100%;
+    
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    gap: 10px;
+                                    width: 100%;
+                                    margin: 0;
+                                    padding: 0;
+    
+                                    li {
+                                        list-style-type: none;
+                                        padding: 5px 8px;
+                                        color: white;
+                                        background-color: #2a6f97;
+                                        border-radius: 5px;
+                                        text-align: center;
+                                        width: max-content;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    @media (max-width: 860px) {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 30px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

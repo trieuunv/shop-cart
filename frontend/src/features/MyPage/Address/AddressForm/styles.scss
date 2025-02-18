@@ -1,0 +1,64 @@
+.address-edit {
+
+    .edit-form {
+        display: flex;
+        flex-direction: column;
+
+        .address-title {
+            margin-bottom: 15px;
+        }
+
+        .edit-content {
+            border-top: solid 1px #868686;
+            padding-top: 20px;
+
+            .edit-field {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding: 20px 0;
+    
+                .edit-title {
+                    width: 175px;
+                    font-size: 14px;
+                }
+    
+                .edit-input {
+                    width: 350px;
+                    display: flex;
+                    justify-content: center;
+                    
+                    input, textarea {
+                        width: 100%;
+                        background: #f9f9f9;
+                    }
+
+                    button {
+                        width: 135px;
+                        border: none;
+                        background: none; 
+                        background: black;
+                        font-weight: 500;
+                        color: white;
+                        cursor: pointer;
+                        border-radius: 4px;
+                      }
+                }
+
+                @media (max-width: 1024px) {
+                    flex-direction: column;
+
+                    .edit-title {
+                        width: 100%;
+                        align-items: normal;
+                        margin-bottom: 10px;
+                    }
+
+                    .edit-input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

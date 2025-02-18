@@ -1,0 +1,42 @@
+.result-handle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none;
+    transition: opacity 0.15s, visibility 0.15s;
+    
+    .result-box {
+        width: 400px;
+        height: 175px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+        .result-text {
+            margin-top: 15px;
+        }
+    }
+
+    &.visible {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto;
+    }
+
+}

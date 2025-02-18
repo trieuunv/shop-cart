@@ -1,0 +1,71 @@
+.confirm-wr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none;
+    transition: all 0.3s;
+    
+    .confirm-box {
+        position: relative;
+        width: 400px;
+        height: max-content;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 50px;
+        transform: translateY(20px);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+
+        .confirm-text {
+            padding: 0px 0 30px;
+            text-align: center;
+        }
+
+        .confirm-btns {
+            display: flex;
+            justify-content: center;
+
+            .confirm-action {
+                min-width: 110px;
+                background: black;
+                color: white;
+                margin-right: 10px;
+                height: 40px;   
+                border: none;
+            }
+
+            .cancel-action {
+                min-width: 110px;
+                border: solid 1px black;
+                height: 40px;
+            }
+        }
+    }
+
+    &.visible {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto;
+
+        .confirm-box {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

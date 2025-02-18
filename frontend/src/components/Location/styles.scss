@@ -1,0 +1,39 @@
+.location-wr {
+    display: flex;
+    flex-direction: column;
+
+    .location-field {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+
+        .location-title {
+            width: 175px;
+            min-width: 175px;
+            font-size: 14px;
+        }
+
+        .location-input {
+            width: 350px;
+            display: flex;
+            
+            select {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            flex-direction: column;
+
+            .location-title {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+            .location-input {
+                width: 100%;
+            }
+        }
+    }
+}

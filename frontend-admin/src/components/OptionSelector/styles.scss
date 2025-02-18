@@ -1,0 +1,40 @@
+.select-att {
+    display: flex;
+    flex-direction: column;
+    gap: 12px !important;
+
+    p {
+        font-weight: 500;
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    .box-type-att {
+        display: flex;
+        gap: 12px !important;
+        flex-grow: row wrap;
+
+        .att-product {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #F7F7F7;
+            border-radius: 6px;
+            padding: 6px 8px !important;
+            box-sizing: border-box;
+            border: solid 1px transparent;
+            cursor: pointer;
+
+            .span-att {
+                color: #000;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+            }
+
+            &.active {
+                border: solid 1px #1C7EFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,218 @@
+.wrap {
+    position: relative;
+
+    .wide {
+        @extend .wide;
+        
+        .title {
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        .payment-layout {
+            padding-bottom: 200rem;
+            display: flex;
+
+            .payment-infor {
+                margin-bottom: 20px;
+                width: 100%;
+                box-sizing: border-box;
+                font-size: 14px;
+
+                .payment-field {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+
+                    .title-field {
+                        padding: 18px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        
+                        a {
+                            color: blue;
+                        }
+                    }
+
+                    .field-content {
+                        display: flex;
+                        border: solid 1px #eee;
+                        padding: 15px;
+                        min-height: 50px;
+
+                        .transport {
+
+                            .customer-infor {
+                                display: flex;
+                                font-weight: 600;
+                                line-height: 20px;
+                                // font-size: 16px;
+                                margin-bottom: 7px;
+        
+                                .partition {
+                                    margin: 0 8px;
+                                    background-color: rgb(235, 235, 240);
+                                    width: 1px;
+                                    height: 20px;
+                                }
+                            }
+        
+                            .address {
+                                color: rgb(128, 128, 137);
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+    
+                        .product-list {
+                            width: 450px;
+                            display: flex;
+                            flex-direction: column;
+    
+                            .product-item {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+    
+                                .product-image {
+                                    width: 10%;
+                                    max-width: 20%;
+                                    height: auto;
+    
+                                    img {
+                                        width: 100%;
+                                        max-width: 100%;
+                                        height: auto;
+                                    }
+                                }
+    
+                                .product-infor {
+                                    flex-grow: 1;
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left: 10px;
+                                    color: rgb(128, 128, 137);
+
+                                    .product-name {
+                                        margin-bottom: 5px;
+                                    }
+
+                                    .product-text {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        
+                                        .total-item {
+                                            color: black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .option-payment {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 20px;
+
+                            input {
+                                margin-right: 10px;
+                            }
+
+                            .option-infor {
+                                display: flex;
+                                align-items: center;
+
+                                .option-img {
+                                    margin-right: 12px;
+                                }
+
+                                img {
+                                    width: 26px;
+                                    height: 26px;
+                                    border-radius: 6px;
+                                }
+                            }
+                        }
+
+                        &.flex-column {
+                            flex-direction: column;
+                        }
+                    }
+                }
+
+                .payment-last {
+                    width: 100%;
+                    display: flex;
+                    margin-top: 20px;
+
+                    .left-content {
+                        width: 65%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .left-title {
+                            margin-bottom: 15px;
+                        }
+
+                        textarea {
+                            width: 50%;
+                            height: 100px;
+                            padding: 10px;
+                            border: solid 1px rgb(196, 196, 207);
+                            border-radius: 2px;
+                        }
+                    }
+
+                    .right-content {
+                        width: 35%;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 15px 25px;
+                        border: solid 1px #eee;
+
+                        .right-field {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px 0;
+
+                            .payment-title {
+                                color: rgb(128, 128, 137);
+                            }
+
+                            .unit {
+                                text-decoration: underline;
+                            }
+
+                            .payment-total {
+                                // color: #d62828;
+                                font-size: 18px;
+                            }
+
+                            &.total {
+                                border-top: solid 1px #eee;
+                            }
+                        }
+                        
+                        .btn-payment {
+                            width: 100%;
+                            margin-top: 10px; 
+                            display: flex;
+                            justify-content: end;
+
+                            button {
+                                width: 100%;
+                                background-color: black;
+                                color: white;
+                                border: none;
+                                height: 46px;
+                                border-radius: 4px;
+                                box-sizing: border-box ;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

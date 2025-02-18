@@ -1,0 +1,32 @@
+.describe-item {
+
+    .fold-btn {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 15px 0;
+
+        .fold-title {
+            // font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    .fold-contents {
+        padding: 25px 0 35px;
+        display: none;
+        
+        .payment {
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+    }
+
+    &.on {
+        .fold-contents {
+            display: block; /* Show content when parent has class "on" */
+        }
+    }
+}

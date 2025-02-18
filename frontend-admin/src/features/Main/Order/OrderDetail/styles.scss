@@ -1,0 +1,201 @@
+.order-wr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+
+    .order-main-title {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid 1px #eee;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .order-contents {
+        display: flex;
+        flex-direction: column;
+
+        .customer-infor {
+            margin-bottom: 20px;
+        }
+
+        .address-infor {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .product-infor {
+            width: 100%;
+            margin-bottom: 20px;
+
+            .product-list {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .product-item {
+                    display: flex;
+                    padding: 10px 0;
+                    border-bottom: dashed 1px #eee;
+
+                    &:last-child {
+                        border: none;
+                    }
+                    
+                    .product-img {
+    
+                        img {
+                            width: 60px;
+                            height: 60px;
+                            object-fit: cover;
+                        }
+                    }
+    
+                    .product-text {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10px;
+                        width: 40%;
+    
+                        .product-name {
+                            line-height: 22px;
+                        }
+    
+                        .product-classify {
+                            line-height: 22px;
+                            color: var(--color-classify-product);
+                        }
+                    }
+    
+                    .product-price {
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: end;
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .order-total-amount {
+                display: flex;
+                justify-content: space-between;
+                padding: 14px 0 10px;
+                border-top: solid 1px #eee;
+            }
+        }
+
+        .order-infor {
+            margin-bottom: 20px;
+
+            .order-field {
+                display: flex;
+                justify-content: space-between;
+                line-height: 24px;
+                margin-bottom: 5px;                
+
+                .price {
+                    
+                }
+
+                img {
+                    width: 200px;
+                    height: auto;
+                }
+
+                .payment-action {
+                    height: 40px;
+                    min-width: 135px;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    cursor: pointer;
+
+                    &.confirm {
+                        background-color: black;
+                        color: white;
+                    }
+
+                    &.cancel {
+                        border: solid 1px black;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .order-status {
+            margin-bottom: 20px;
+
+            .status-field {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 7px;
+
+                .field-name {
+                    
+                }
+
+                .field-status {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        margin-right: 10px;
+                    }
+
+                    .status-img {
+                        
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .order-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+
+            button {
+                padding: 8px 20px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.field-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.field-content {
+    padding: 10px;
+    border: solid 1px #eee;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+
+    .schedules-field {
+        padding: 7px;
+        border-bottom: dashed 1px #eee;
+        display: flex;
+        justify-content: space-between;
+
+        &:last-child {
+            border: none;
+        }
+
+        .schedules-date {
+            color: var(--color-schedule-date);
+        }
+    }
+}

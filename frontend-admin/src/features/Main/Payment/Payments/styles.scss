@@ -1,0 +1,20 @@
+.payment-list {
+    display: flex;
+    flex-direction: column;
+
+    .payment-title {
+        padding: 10px 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        select {
+            appearance: none;
+            padding: 0 30px 0 10px;
+            height: 40px;
+            background-color: none;
+            background: no-repeat right 10px center;
+            outline: none;
+        }
+    }
+}

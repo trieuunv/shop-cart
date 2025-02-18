@@ -1,0 +1,98 @@
+.product-body {
+    width: 100%;
+    margin-top: 106px;
+    min-width: 560px;
+
+    .wide {
+        @extend .wide;
+
+        .title {
+            padding: 90px 0 70px;
+
+            span {
+                font-size: 40px;
+                font-weight: 700;
+            }
+        }
+
+        .product-menu {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 73px;
+
+            .product-total {
+
+                span {
+                    font-size: 14px;
+                }
+
+                .count {
+                    font-weight: bold;
+                    padding: 0 3px;  
+                }
+            }
+
+            .product-options {
+        
+            }
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 5px;
+            row-gap: 28px;
+            margin-top: 25px;
+
+            @media (max-width: 765px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px 10px;
+            }
+        }
+
+        .product-page {
+            // width: 100%;
+            margin-top: 60px;
+            display: flex;
+            margin-bottom: 10rem;
+            justify-content: center;
+            
+            ol {
+                display: flex;
+                width: 35px;
+
+                li {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                    min-width: 100%;
+                    justify-content: center;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 16px;
+                        font-weight: 600;
+                        height: max-content;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            a {
+                width: max-content;
+                // height: 35px;
+                opacity: 0.4;
+                transition: opacity 0.4s;
+                display: flex;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

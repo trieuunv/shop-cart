@@ -1,0 +1,40 @@
+.email-content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 200px;
+
+    .email-persional {
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+
+        .email-title {
+          margin-bottom: 15px;
+        }
+
+        .email-content {
+          border-top: solid 1px #868686;
+          padding-top: 20px;
+          display: flex;
+
+          .new-email-form {
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            input {
+              width: 300px;
+            }
+
+            button {
+              margin-left: 10px;
+              border-radius: 4px;
+              background: black;
+              border: none;
+              color: white;
+            }
+          }
+        }
+    }
+}

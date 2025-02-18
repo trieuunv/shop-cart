@@ -1,0 +1,200 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    visibility: hidden; 
+    pointer-events: none;
+    transition: all 0.3s;
+
+    .login-container {
+        position: relative;
+        width: 400px;
+        height: max-content;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 50px;
+        transform: translateY(20px);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+
+        .login-popup-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .login-popup-form {
+            display: flex;
+            flex-direction: column;
+
+            .form-title {
+                font-size: 21px;
+                font-weight: bold;
+            }
+
+            .form-desc {
+                padding: 11px 0 40px;
+                color: #999;
+                font-size: 14px;
+            }
+
+            .normal-login {
+
+                .input-box {
+                    position: relative;
+                    font-size: 14px;
+                    
+                    #member-id {
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        padding: 0;
+                        outline: none;
+                        box-shadow: none;
+                        border: none;
+                        font-size: 15px;
+                        border-bottom: solid 1px #e5e5e5;
+                        border-radius: 0px;
+                        z-index: 1;
+                        transition: none;
+
+                        &:focus-within {
+                            outline: none;
+                            box-shadow: none;
+                            border-bottom: solid 1px black;   
+                            padding-top: 16px;
+                        }
+
+                        &::placeholder {
+                            color: #888;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .input-title {
+                        color: #888;    
+                        font-size: 12px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 2;
+                    }
+
+                    .order-no {
+                        position: relative;
+                        margin-top: 10px;
+                    }
+
+                    .passwd {
+                        display: block;
+                        margin-top: 10px;
+                        position: relative;
+                        transition: none;
+
+                        .passwd .ant-input-password-icon {
+                            height: 50px;
+                        }
+
+                        .member-passwd {
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            padding: 0;
+                            outline: none;
+                            box-shadow: none;
+                            border: none;
+                            font-size: 15px;
+                            border-bottom: solid 1px #e5e5e5;
+                            border-radius: 0px;
+                            z-index: 1;
+                            transition: none;
+
+                            &:focus-within {
+                                outline: none;
+                                box-shadow: none;
+                                border-bottom: solid 1px black;   
+                                padding-top: 16px;
+
+                            }
+
+                            & > input::placeholder {
+                                color: #888;
+                                font-size: 14px;
+                            }
+
+
+                        }
+
+                        .input-title {
+                            color: #888;    
+                            font-size: 12px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                        }
+                    }
+                }
+
+                .login-checkbox {
+                    margin: 15px 0;
+                }
+
+                .login-btn {
+                    width: 100%;
+                    height: 54px;
+                    border: 1px;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    text-align: center;
+                    cursor: pointer;
+                    background-color: #f6f7f9;
+                    font-size: 14px;
+                }
+
+                .util-menu {
+                    margin-top: 15px;
+                    width: 100%;
+                    border: none;
+                    display: flex;
+                    justify-content: space-between;
+
+                    a {
+                        color: #888;
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.show {
+        opacity: 1; 
+        visibility: visible; 
+        pointer-events: auto;
+
+        .login-container {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

@@ -1,0 +1,268 @@
+.login-container {
+    width: 100%;
+    height: 100%;
+
+    .warp {
+        padding-top: 106px;
+        max-width: 420px;
+        margin: 0 auto;
+
+        .login-header {
+            
+            .top-nav {
+                display: flex;
+                padding: 17px 20px;
+                justify-content: space-between;
+
+                .back-btn {
+                    background-image: url(https://storage.keepgrow.com/admin/20230625233259293.png);
+                    width: 16px;
+                    height: 16px;
+                    background-size: auto 16px;
+                }
+
+                .home-btn {
+                    background-image: url(https://storage.keepgrow.com/admin/20230625234558976.png);
+                    width: 16px;
+                    height: 16px;
+                    background-size: auto 16px;
+                }
+            }
+
+            .shop-name {
+                font-size: 19px;
+                font-weight: 500;
+                padding: 5px 20px 0;
+                text-align: center;
+                line-height: normal;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+
+        .login-section {
+            padding: 0 20px;
+
+            .contents {
+                padding: 34px 0;
+
+                .title {
+                    font-size: 23px;
+                    color: #222;
+                    font-weight: 700;
+                    margin: 0 0 5px;
+                    line-height: normal;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .text {
+                    margin-bottom: 15px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: normal;
+                    color: #222;
+                }
+
+                .basic-btn {
+
+                    .btn {
+                        padding: 0;
+                        display: inline-block;
+                        width: 100%;
+                        height: 54px;
+                        border-radius: 10px;
+                        font-weight: 500;
+                        text-align: center;
+                        cursor: pointer;                        
+                    }
+
+                    .google-btn {
+                        background-repeat: no-repeat;
+                        background-color: #4285F4;
+                        background-image: url(https://cdn-icons-png.flaticon.com/512/104/104093.png);
+                        line-height: 54px !important;
+                        background-position: 20px !important;
+                        background-size: 22px !important;
+                        font-size: 17px;
+
+                        font {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .member-login {
+
+                .tab-menu {
+                    padding: 3px;
+                    margin-bottom: 15px;
+                    background: #f6f7f9;
+                    border-radius: 20px;
+
+                    li {
+                        width: 50%;
+                        display: inline-block;
+
+                        a {
+                            width: 100%;
+                            display: inline-block;
+                            height: 34px;
+                            border-radius: 17px;
+                            font-weight: 400;
+                            text-align: center;
+                            line-height: 32px;
+                            text-decoration: none;
+                            box-sizing: border-box;
+                            color: #222;
+                        }
+
+                        &.active > a {
+                            background: #222;
+                            border: unset;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .form-wrap {
+
+                    .member-form {
+
+                        .normal-login {
+
+                            .input-box {
+                                position: relative;
+                                
+                                #member-id {
+                                    width: 100%;
+                                    height: 50px;
+                                    line-height: 50px;
+                                    padding: 0;
+                                    outline: none;
+                                    box-shadow: none;
+                                    border: none;
+                                    font-size: 15px;
+                                    border-bottom: solid 1px #e5e5e5;
+                                    border-radius: 0px;
+                                    z-index: 1;
+
+                                    &:focus {
+                                        outline: none;
+                                        box-shadow: none;
+                                        border-bottom: solid 1px black;   
+                                    }
+
+                                    &::placeholder {
+                                        color: #888;
+                                    }
+                                }
+
+                                .input-title {
+                                    color: #888;    
+                                    font-size: 13px;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    z-index: 2;
+                                }
+
+                                .order-no {
+                                    position: relative;
+                                    margin-top: 10px;
+                                }
+
+                                .passwd {
+                                    display: block;
+                                    margin-top: 10px;
+                                    position: relative;
+
+                                    .member-passwd {
+                                        width: 100%;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        padding: 0;
+                                        outline: none;
+                                        box-shadow: none;
+                                        border: none;
+                                        font-size: 15px;
+                                        border-bottom: solid 1px #e5e5e5;
+                                        border-radius: 0px;
+                                        z-index: 1;
+
+                                        &:focus-within {
+                                            outline: none;
+                                            box-shadow: none;
+                                            border-bottom: solid 1px black;   
+                                        }
+
+                                        & > input::placeholder {
+                                            color: #888;
+                                        }
+
+
+                                    }
+
+                                    .input-title {
+                                        color: #888;    
+                                        font-size: 13px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        z-index: 2;
+                                    }
+                                }
+                            }
+
+                            .login-checkbox {
+                                margin: 15px 0;
+                            }
+
+                            .login-btn {
+                                display: inline-block;
+                                width: 100%;
+                                height: 54px;
+                                line-height: 54px;
+                                border: 1px;
+                                box-sizing: border-box;
+                                border-radius: 10px;
+                                text-align: center;
+                                cursor: pointer;
+                                background-color: #f6f7f9;
+                            }
+
+                            .util-menu {
+                                margin-top: 15px;
+                                width: 100%;
+                                border: none;
+                                display: block;
+
+                                a {
+                                    color: #888;
+                                    text-decoration: none;
+                                    font-weight: 400;
+                                    font-size: 15px;
+                                }
+
+                                .right {
+                                    padding-left: 10.5px;
+                                    margin-left: 10.5px;
+                                    display: inline-block;
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .login-footer {
+
+        }
+    }
+}

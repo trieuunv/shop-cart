@@ -1,0 +1,35 @@
+.main-container {
+    width: 100%;
+    min-height: calc(100svh - 65px);
+
+    .main-menu-list {
+        padding-top: 48px;
+
+        .main-menu-item {
+            display: block;
+            width: 100%;
+            position: relative;
+            padding: 0 32px;
+            font-size: 15px;
+
+            &:active {
+                background-color: rgba(70, 72, 75, .35);
+            }
+
+            a {
+                min-height: 56px;
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            &__icon {
+                width: 24px;
+                height: 24px;
+                margin-right: 18px;
+                color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    }    
+}

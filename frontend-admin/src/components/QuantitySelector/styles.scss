@@ -1,0 +1,33 @@
+.button-quatity {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .minus, .plus{
+        display: flex;
+        justify-content: center;
+        width: 32px;
+        padding: 6px 10px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        background: #F7F7F7;
+        text-align: center;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .num {
+        display: flex;
+        padding: 6px 10px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        background: #F7F7F7;
+        text-align: center;
+        cursor: pointer;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 14px;
+    }
+}

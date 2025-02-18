@@ -1,0 +1,42 @@
+.address-detail {
+
+    .address-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .address-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            div {
+                margin-bottom: 5px;
+
+                & > span:first-child {
+                    color: rgba(85, 85, 85, .8);
+                }
+            }
+
+            .customer-name {
+                margin-bottom: 10px;
+            }
+
+            .address {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .phone-number {
+                font-size: 14px;
+            }
+        }
+
+        .address-action {
+            button {
+                padding: 4px 12px;
+            }
+        }
+    }
+}

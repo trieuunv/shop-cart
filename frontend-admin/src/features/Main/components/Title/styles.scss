@@ -1,0 +1,61 @@
+.title-wr {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    height: 35px;
+
+    .title-name {
+        width: 25%;
+        height: 100%;
+        border-radius: 8px; 
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .title-actions {
+        display: flex;
+
+        .search-wr {
+            width: 300px;
+            height: 100%;
+            padding: 4px 10px;
+            display: flex;
+            background-color: #eee;
+            border-radius: 2px;
+            align-items: center;
+
+            input {
+                flex-grow: 1;
+                height: 100%;
+                border-radius: 8px;
+                border: none;
+                outline: none;
+                background: none;
+            }
+        }
+
+        .add-btn {
+            display: flex;
+            width: 50px;
+            background-color: black;
+            margin-left: 20px;
+            border-radius: 2px;
+            border: none;
+            cursor: pointer;
+
+            span {
+                width: 25px;
+                height: 25px;
+                background-size: contain;
+                margin: auto;
+            }
+        }
+    }
+
+    .customer-list {
+        flex-grow: 1;
+        overflow-y: auto;
+        max-height: 400px;
+    }
+}

@@ -1,0 +1,21 @@
+.banner-container {
+    display: flex;
+
+    .banner-form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-bottom: 10px;
+            width: 300px;
+        }
+        
+        .btn-submit {
+            margin-top: 20px;
+            background: black;
+            border: none;
+            border-radius: 4px;
+            color: white;
+        }
+    }
+}
